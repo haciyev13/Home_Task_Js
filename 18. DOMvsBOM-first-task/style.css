@@ -1,0 +1,51 @@
+body{
+    background-color: #000;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content button{
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+span{
+    padding: 0 20px;
+    font-size: 30px;
+    color: #fff;
+}
+#start{
+    background-color: green;
+}
+#stop{
+    background-color: red;
+}
+#increment{
+    background-color: rgb(45, 150, 224);
+    margin-right: 10px;
+}
+#decrement{
+    background-color: rgb(45, 150, 224);
+}
+#reset{
+    background-color: rgb(183, 64, 13);
+}
+form #value{
+    background-color: bisque;
+    color: #000;
+    margin-left: 30px;
+}
+form input{
+    padding: 13px 20px;
+    outline: none;
+    border: 3px solid red;
+}
+h2{
+    color: #fff;
+    font-size: 28;
+}
