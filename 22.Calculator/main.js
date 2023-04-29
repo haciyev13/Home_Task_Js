@@ -8,24 +8,49 @@ let divisionBtn = document.querySelector(".division-btn");
 let resetBtn = document.querySelector(".reset-btn");
 
 let resultValue;
+
 additionBtn.addEventListener('click',()=>{
-     resultValue = +value1Input.value + +value2Input.value;
+    if (value1Input.value === '' || value2Input.value === '') {
+        alert('Zahmet olmazsa bir reqem daxil edin');
+        return;
+    }
+
+    resultValue = +value1Input.value + +value2Input.value;
     resultInput.innerText = resultValue;
 })
+
 substractBtn.addEventListener("click",function(){
+    if (value1Input.value === '' || value2Input.value === '') {
+        alert('Zahmet olmazsa bir reqem daxil edin');
+        return;
+    }
+
     resultValue = +value1Input.value - +value2Input.value;
     resultInput.innerText = resultValue;
 })
+
 multiplyBtn.addEventListener("click",function(){
+    if (value1Input.value === '' || value2Input.value === '') {
+        alert('Zahmet olmazsa bir reqem daxil edin');
+        return;
+    }
+
     resultValue = +value1Input.value * +value2Input.value;
     resultInput.innerText = resultValue;
 })
+
 divisionBtn.addEventListener("click",function(){
+    if (value1Input.value === '' || value2Input.value === '') {
+        alert('Zahmet olmazsa reqem daxil edin');
+        return;
+    }
+
     resultValue = +value1Input.value / +value2Input.value;
     resultInput.innerText = resultValue;
 })
+
 resetBtn.addEventListener("click",function(){
     value1Input.value='';
     value2Input.value='';
     resultInput.innerText = "0";
-})
+});

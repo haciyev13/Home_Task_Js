@@ -56,7 +56,6 @@ section .container .content .calculator .value {
   width: 100%;
   max-width: 450px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
