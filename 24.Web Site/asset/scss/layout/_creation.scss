@@ -1,0 +1,48 @@
+section {
+    .creations {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .creat {
+        h1 {
+          font-size: 40px;
+          font-weight: 300;
+          letter-spacing: 2px;
+        }
+      }
+      .btnLight {
+        button {
+          padding: 15px 30px;
+          background-color: $white;
+          border: 1px solid $black;
+          font-size: 17px;
+          letter-spacing: 2px;
+          font-weight: 200;
+          cursor: pointer;
+          &:hover {
+            background-color: $black;
+            color: $white;
+          }
+        }
+      }
+    }
+  
+  @media only screen and (max-width: 991px) {
+    .creations {
+      justify-content: center;
+      .creat {
+        h1 {
+          font-size: 30px;
+          font-weight: 300;
+          letter-spacing: 2px;
+        }
+      }
+      .btnLight {
+        button {
+          display: none;
+        }
+      }
+    }
+  }
+}

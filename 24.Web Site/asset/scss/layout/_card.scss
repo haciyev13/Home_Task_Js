@@ -1,0 +1,127 @@
+section {
+  .content {
+    width: 100%;
+    .top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      button{
+        display: none;
+      }
+      .card {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 270px;
+        &:hover {
+          opacity: 0.5;
+        }
+        span {
+          color: $white;
+          display: flex;
+          align-items: flex-end;
+          height: 100%;
+          font-size: 35px;
+          font-weight: 300;
+          padding: 0px 0 20px 20px;
+          margin-bottom: 20px;
+        }
+      }
+      .card1 {
+        background-image: url(/asset/images/desktop/image-deep-earth.jpg);
+      }
+      .card2 {
+        background-image: url(/asset/images/desktop/image-night-arcade.jpg);
+      }
+      .card3 {
+        background-image: url(/asset/images/desktop/image-soccer-team.jpg);
+      }
+      .card4 {
+        background-image: url(/asset/images/desktop/image-grid.jpg);
+      }
+      .card5 {
+        background-image: url(/asset/images/desktop/image-from-above.jpg);
+      }
+      .card6 {
+        background-image: url(/asset/images/desktop/image-pocket-borealis.jpg);
+      }
+      .card7 {
+        background-image: url(/asset/images/desktop/image-curiosity.jpg);
+      }
+      .card8 {
+        background-image: url(/asset/images/desktop/image-fisheye.jpg);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 991px) {
+    .content {
+      .top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .card {
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          width: 300px;
+          height: 120px;
+          span {
+            color: $white;
+            display: flex;
+            align-items: flex-end;
+            font-size: 23px;
+            font-weight: 200;
+            display: inline-block;
+            margin-top: 20%;
+          }
+        }
+        .card1 {
+          background-image: url(/asset/images/mobile/image-deep-earth.jpg);
+        }
+        .card2 {
+          background-image: url(/asset/images/mobile/image-night-arcade.jpg);
+        }
+        .card3 {
+          background-image: url(/asset/images/mobile/image-soccer-team.jpg);
+        }
+        .card4 {
+          background-image: url(/asset/images/mobile/image-grid.jpg);
+        }
+        .card5 {
+          background-image: url(/asset/images/mobile/image-from-above.jpg);
+        }
+        .card6 {
+          background-image: url(/asset/images/mobile/image-pocket-borealis.jpg);
+        }
+        .card7 {
+          background-image: url(/asset/images/mobile/image-curiosity.jpg);
+        }
+        .card8 {
+          background-image: url(/asset/images/mobile/image-fisheye.jpg);
+        }
+        .btnLight {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          button {
+            padding: 15px 30px;
+            background-color: $white;
+            border: 1px solid $black;
+            font-size: 17px;
+            letter-spacing: 2px;
+            font-weight: 200;
+            margin-bottom: 50px;
+            cursor: pointer;
+            &:hover {
+              background-color: $black;
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
